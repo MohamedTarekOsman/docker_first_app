@@ -27,7 +27,7 @@
 # CMD [ "redis - server"]
 ##########################################################################
 FROM openjdk:8
-WORKDIR /dir
-COPY  . /dir
+WORKDIR /usr/src/app
+COPY . .
 RUN javac Os2.java
 CMD ["java", "Os2"]
